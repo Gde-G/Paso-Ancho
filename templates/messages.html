@@ -1,0 +1,14 @@
+
+{% for message in messages %}
+<div class="container position-fixed p-5">
+    <div class="alert {{ message.tags }} alert-dismissible shadow fade show my-5" role="alert" >
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <h4 class="alert-heading">
+            Su consulta fue enviada con exito!
+        </h4>
+        {{ message | safe }}
+        <hr>
+        <small class="text-muted">Recuerde revisar la casilla de correos no deseado / spam.</small>
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,120 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    Actividades 
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<br>
+<div class="container">
+    <!--Senderismo-->
+    <br>
+    <h1 class="my-4 main-subtitle text-center"> Actividades </h1>
+    <hr id="senderismo">
+    <hr>
+    <div class="card my-5">
+        <div class="row g-0 ">
+            <div class="col-4">
+                <img src="{% static 'images/actividades/senderismo.jpg' %}" class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Senderismo(o otra cosa jee)</h3>
+                    <p class="card-text mt-5">
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                    </p>
+                    <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam.</small>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+    <!--Trekking-->
+    
+    <hr id="trekking">
+    <hr>
+    <div class="card my-5">
+        <div class="row g-0">
+            <div class="col-lg-4">
+                <img src="{% static 'images/actividades/trekking.png' %}" class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Trekking(o otra cosa jee)</h3>
+                    <p class="card-text mt-5">
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                    </p>
+                    <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam.</small>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+    <!--Alguna otra-->
+    
+    <hr id="algo">
+    <hr>
+    <div class="card my-5">
+        <div class="row g-0">
+            <div class="col-lg-4">
+                <img src="{% static 'images/actividades/algunamas.png' %}" class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Alguna Boludes</h3>
+                    <p class="card-text mt-5">
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                    </p>
+                    <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam.</small>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+
+    <!--Dia de Campo-->
+    
+    <hr id="diacampo">
+    <hr>
+    <div class="card my-5">
+        <div class="row g-0">
+            <div class="col-lg-4">
+                <img src="{% static 'images/actividades/diacampo.png' %}" class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Dia de Campo</h3>
+                    <p class="card-text mt-5">
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                        This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer. This content is a little bit longer.
+                    </p>
+                    <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quisquam.</small>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'base/contacto_form.html' %}
+{% endblock content %}

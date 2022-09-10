@@ -1,0 +1,113 @@
+{% extends 'main.html' %}
+
+{% block title%}
+    Alrededores
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<br>
+<h1 class="my-5 text-center main-subtitle">Lugares</h1>
+<div class="container my-5">
+    <div class="row my-5">
+        <div class="col-lg-4 mb-5">
+            <div class="card border border-white border-3 rounder-3">
+                <img src="{% static 'images/alrededores/Foto9.jpg' %}" alt="" class="card-image-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Villa Alpina</h3>
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Ubicacion Actual </small>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.google.com/maps/place/Parador+Paso+Ancho/@-31.9752743,-64.7726931,16.17z/data=!4m13!1m7!3m6!1s0x95d2cc0a27ea2d1f:0x9dd9554d7478f62a!2sVilla+Alpina,+C%C3%B3rdoba!3b1!8m2!3d-31.9563507!4d-64.8132356!3m4!1s0x95d2c9b90102275b:0x537f14a23ab10ecd!8m2!3d-31.9716179!4d-64.770682"
+                                class="text-muted text-decoration-none" >
+                                <i class="bi bi-geo ms-3 text-danger"></i>
+                                Abrir mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">
+                        Villa Alpina es el punto cero y el lugar ideal para emprender el
+                        ascenso al cerro Champaquí, presenta unos extraordinarios paisajes
+                        de naturaleza para la gente que gusta de ella y el montañismo. 
+                        Atraviesa la villa el río Los Reartes, configurando un lugar de
+                        extraordinaria belleza con excelente vegetación, río y caminos para
+                        excursiones a pie o a caballo.
+                    </p>
+                </div>
+            </div>                
+        </div>
+        <div class="col-lg-4 mb-5">
+            <div class="card border border-white border-3 rounder-3">
+                <img src="{% static 'images/alrededores/lacumbresita.jpeg' %}" alt="" class="card-image-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">La Cumbrecita</h3>
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Distancia: 10 KM</small>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.google.com/maps/place/La+Cumbrecita,+C%C3%B3rdoba/@-31.8978818,-64.7907873,15z/data=!3m1!4b1!4m5!3m4!1s0x95d2cb22ee24bc3f:0x9455570e961749c!8m2!3d-31.8991371!4d-64.7730365"
+                                class="text-muted text-decoration-none" >
+                                <i class="bi bi-geo ms-3 text-danger"></i>
+                                Abrir mapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">
+                        La Cumbrecita y sus alrededores fueron declarados RESERVA NATURAL
+                        DE USO MULTIPLE, siendo el pueblo el centro de este gran ecosistema
+                        y el principal guardián de la diversidad que en él habita. 
+                        La Cumbrecita es además un PUEBLO PEATONAL, donde no se permite el
+                        ingreso con vehículos y todos los recorridos están previstos para ser
+                        realizados a pie.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-5">
+            <div class="card border border-white border-3 rounder-3">
+                <img src="{% static 'images/alrededores/villagbelgrano.jpeg' %}" alt="" class="card-image-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Villa General Belgrano</h3>
+                    <div class="row">
+                        <div class="col">
+                            <small class="text-muted">Distancia: 20KM</small>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.google.com/maps/place/X5194+Villa+Gral.+Belgrano,+C%C3%B3rdoba/@-31.9772813,-64.5909119,13z/data=!3m1!4b1!4m5!3m4!1s0x95d2b05df32fdf21:0xca30b7769d4566d3!8m2!3d-31.9776652!4d-64.5594102"
+                                class="text-muted text-decoration-none" >
+                                 <i class="bi bi-geo ms-3 text-danger"></i>
+                                Abrir mapa
+                            </a>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">
+                        En el mes de Octubre, en Villa General Belgrano se vive una época muy
+                        especial. En el corazón del pueblo, en el Parque Cervecero, es posible
+                        encontrarse con los espectáculos característicos de esta festividad:
+                        orquestas de música centroeuropea o de otros géneros y grupos de 
+                        danzas en representación de las más diversas colectividades.
+                            
+                    </p>
+                </div>
+            </div>                
+        </div>
+    </div>
+</div>
+    
+<div class="container text-white my-5 w-100">
+    <hr>
+    <hr>
+</div>
+
+{% include 'base/contacto_form.html' %}
+{% endblock content%}

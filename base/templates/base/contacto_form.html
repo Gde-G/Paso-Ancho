@@ -1,0 +1,43 @@
+<!--Contacto-->
+<div class="container text-white my-5 w-75">
+    <div class="text-center">
+        <h1 class="main-subtitle">Consultas</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consectetur, 
+            mollitia perferendis tenetur explicabo voluptas voluptate architecto debitis perspiciatis voluptates.
+        </p>
+    </div>
+    <form action="{% url 'consulta' %}" method="post" class="border border-white rounded-3">
+        {% csrf_token %}
+        <div class="my-3 ms-lg-5 ms-2">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" name="name" class="form-control shadow w-75" placeholder="Ingrese su nombre..." required>
+        </div>
+        <div class="mb-3 ms-lg-5 ms-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control shadow w-75" placeholder="Ingrese su email..." required>
+        </div>
+        <div class="mb-2 ms-lg-5 ms-2">
+            <label for="question" class="form-label">Pregunta</label>
+            <textarea name="question" rows="3" class="form-control shadow w-75" placeholder="Ingrese su pregunta..." required></textarea>
+        </div>
+        <div class="row mb-0">
+            <div class="col ms-lg-5">
+                <p>
+                    Tambien podes escribirnos a Whats App!
+                    <i class="bi bi-whatsapp text-success  mt-0">
+                         <small class="text-muted">+54 351 000 0000</small>
+                    </i>
+                </p> 
+                
+            </div>
+            <div class="col">
+                <div class="d-flex justify-content-end mb-4">
+                <input type="submit" class="btn btn-outline-light w-auto mx-2 mx-lg-5" value="Confirmar">
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</div>
+<br>

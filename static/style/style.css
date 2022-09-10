@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Flood';
+    src: url('../fonts/Flood.ttf');
+}
+
+body{
+    background: rgb(0,3,19);
+    background: linear-gradient(90deg, rgba(0,3,19,1) 0%, rgb(0, 26, 6) 100%);
+}
+
+.logo{
+    font-family: 'Flood', sans-serif;
+    line-height: 0;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.main-title{
+    font-family: 'Flood', sans-serif;
+    line-height: 1;
+    font-size: 4rem;
+}
+
+.main-subtitle{
+    font-family: 'Flood', sans-serif;
+    line-height: 1;
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+.green-carousel-title{
+    font-family: 'Flood', sans-serif;
+    line-height: 1;
+    font-size: 4rem;
+    color: rgb(9, 46, 6);
+}
+
+
+.white-carousel-title{
+    font-family: 'Flood', sans-serif;
+    line-height: 1;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+.brawn-carousel-title{
+    font-family: 'Flood', sans-serif;
+    line-height: 1;
+    font-size: 4rem;
+    color: rgb(39, 15, 15);
+}

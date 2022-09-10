@@ -1,0 +1,43 @@
+{% load static %}
+<!--NAV BAR-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:  rgb(216, 250, 216);">
+    <div class="container-fluid ">
+        <a class="navbar-brand ms-2 rounded-3" href="{% url 'home' %}">
+            <img src="{% static 'images/Logo.png'%}" height="50" width="50" alt="">
+            <strong class="logo"> Paso Ancho</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-lg-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item ms-lg-5">
+                    <a class="nav-link" aria-current="page" href="{% url 'cabañas' %}">Cabañas</a>
+                </li>
+                <li class="nav-item ms-lg-5">
+                    <a class="nav-link" href="{% url 'alrededores' %}">Alrededores</a>
+                </li>
+                <li class="nav-item dropdown ms-lg-5">
+                    <a class="nav-link dropdown-toggle ms-2" href="{% url 'home' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Actividades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'home' %}{{actividades0}}">Senderismo</a></li>
+                        <li><a class="dropdown-item" href="{% url 'home' %}{{actividades1}}">Trekking</a></li>
+                        <li><a class="dropdown-item" href="{% url 'home' %}{{actividades2}}">Algo</a></li>
+                        <li><a class="dropdown-item" href="{% url 'home' %}{{actividades3}}">Dia de Campo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ms-lg-5">
+                    <a class="nav-link" href="{% url 'contactanos' %}"><strong> Contactanos</strong></a>
+                </li>
+            </ul>
+            <!--
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success me-2" type="submit">Buscar</button>
+            </form>
+            -->
+        </div>
+    </div>
+</nav>

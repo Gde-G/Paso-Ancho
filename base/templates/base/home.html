@@ -1,0 +1,156 @@
+{% extends 'main.html' %}
+
+{% block title %}
+    Inicio
+{% endblock title%}
+
+{% block content%}
+{% load static%}
+<!--Carrousel IMG-->
+<div class="row w-100 mx-0 g-0">
+    <div class="col">
+        <div id="carousel" class="carousel carousel-white slide carousel-fade bg-image mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                        
+                    <img src="{% static 'images/index/caru1.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="white-carousel-title">Realmente Bueno</h3>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item " data-bs-interval="2000">
+                    <img src="{% static 'images/index/caru2.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="white-carousel-title">Ostia Ostia gallego</h3>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="{% static 'images/index/caru3.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block w-auto">
+                        <h3 class="green-carousel-title">Algo Mejor q lo otro</h3>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="{% static 'images/index/caru4.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block w-auto">
+                        <h3 class="green-carousel-title">Algo Interesantisiomo</h3>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="{% static 'images/index/caru5.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block w-auto">
+                        <h3 class="brawn-carousel-title">Aguante Belgrano</h3>
+                        
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="{% static 'images/index/caru6.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block w-auto">
+                        <h3 class="brawn-carousel-title">Algo muy LOCO</h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-white bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden text-white">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon text-white bg-dark rounded-circle" aria-hidden="true"></span>
+                <span class="visually-hidden text-white">Next</span>
+            </button>
+        </div>
+    </div>
+        
+</div>
+    
+<!--Algun contenidito de texto-->
+<div class="container mt-1 mb-5">
+    <div class="row justify-content-center mb-3">
+        <h1 class="text-center text-white main-title">Paso Ancho</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <p class="text-center text-white">
+                Dexcription... Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quia a quisquam nisi, cupiditate quod repellat dignissimos mollitia autem
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, aliquam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, inventore?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates laboriosam provident rerum iste fugit harum.
+            </p>
+        </div>
+        <div class="col-1"></div>
+    </div>      
+</div>
+
+<!--Un videito de algo -->
+<div class="container my-2 mb-3">
+    <div class="row justify-content-center">    
+        <video width="50%" height="150%" class="d-flex w-75" controls>
+            <source src="{% static 'images/Vid1-Drone.mp4' %}" type="video/mp4">
+        </video>   
+    </div>      
+</div>
+    
+<!--Card para la cabañas-->
+<div class="container text-white text-center my-5 mb-3">
+    <h1 class="main-subtitle">Cabañas</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.Quae et officia velit, quo sit voluptas
+        quia soluta sapiente! Beatae, id. Repellendus eveniet ipsa ex omnis! 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, aliquam.
+
+    </p>
+    <div class="row justify-content-center ">
+        <div class="col-lg-5 g-4">
+            <div class="card text-dark text-center border border-3" style="background-color:  rgb(216, 250, 216);">
+                <div class="card-header">
+                    <img src="{% static 'images/index/card-cab8per.jpg' %}" class="card-img-top" alt="" >
+                    <h3 class="card-title">Cabaña 1</h3>
+                </div>
+                <div class="card-body">
+                    <p>Cabaña con capacidad para 29382438 personas
+                        abajo re piola 23 habitaciones Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ab.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{cabaña8}}" class="btn btn-outline-success w-100">Mas Informacion!</a>
+                </div>
+            </div>
+        </div>
+            
+        <div class="col-lg-5 g-4">
+            <div class="card text-dark text-center border border-3" style="background-color:  rgb(216, 250, 216);">
+                <div class="card-header">
+                    <img src="{% static 'images/index/card-cab2per.jpg' %}" class="card-img-top" alt="" >
+                    <h3 class="card-title">Cabaña 2</h3>
+                </div>
+                <div class="card-body">
+                    <p>Cabaña con capacidad para 29382438 personas
+                        abajo re piola 23 habitaciones Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ab.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{cabaña2}}" class="btn btn-outline-success w-100">Mas Informacion!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'base/contacto_form.html' %}
+
+{% endblock content%}
