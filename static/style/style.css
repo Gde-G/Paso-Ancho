@@ -24,28 +24,6 @@ body{
 .main-subtitle{
     font-family: 'Flood', sans-serif;
     line-height: 1;
-    font-size: 3rem;
+    font-size: 2rem;
     color: aliceblue;
-}
-
-.green-carousel-title{
-    font-family: 'Flood', sans-serif;
-    line-height: 1;
-    font-size: 4rem;
-    color: rgb(9, 46, 6);
-}
-
-
-.white-carousel-title{
-    font-family: 'Flood', sans-serif;
-    line-height: 1;
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-}
-
-.brawn-carousel-title{
-    font-family: 'Flood', sans-serif;
-    line-height: 1;
-    font-size: 4rem;
-    color: rgb(39, 15, 15);
 }
