@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.http import HttpRequest
 from django.contrib import messages
-from django.core.mail import EmailMessage
+from django.core.mail import EmailMessage, EmailMultiAlternatives
 from django.conf import settings
+from django.template.loader import get_template
 
 from .forms import ConsultaForm
 from .models import Consulta
@@ -84,21 +85,38 @@ def consulta(request: HttpRequest):
     form = ConsultaForm()
     
     if request.method == 'POST':
-        name = request.POST.get('name'),
-        email = request.POST.get('email'),
-        question = request.POST.get('question')
-        
-        body = f'''Consulta:\n\nNombre: {name}\nMail: {email}\nPregunta: {question}'''
+        name = request.POST.__getitem__('name'),
+        email = request.POST.__getitem__('email'),
+        date_from = request.POST.__getitem__('date_from'),
+        date_to = request.POST.__getitem__('date_to'),
+        amount_adults = request.POST.__getitem__('amount_adults'),
+        amount_kids = request.POST.__getitem__('amount_kids'),
+        question = request.POST.__getitem__('question')
 
-        email = EmailMessage(
-            subject='Consulta desde la pagina Web',
-            body=body,
+        context = {
+            'name': name[0],
+            'email': email[0],
+            'date_from': date_from[0], 
+            'date_to': date_to[0], 
+            'amount_adults': amount_adults[0], 
+            'amount_kids': amount_kids[0],
+            'question': question, 
+        }
+
+        temp = get_template('base/email_template.html')
+
+        content = temp.render(context)
+
+        corr = EmailMultiAlternatives(
+            subject='Consulta desde pasoanchova.com',
             from_email=settings.EMAIL_HOST_USER,
-            to=[settings.EMAIL_HOST_USER]
-        )
+            to=[settings.EMAIL_HOST_USER],
+            reply_to=email)
         
-        email.send(fail_silently=False)
-
+        corr.attach_alternative(content, 'text/html')
+        corr.send(fail_silently=False)
+        
+        
         messages.success(request, 'La consulta fue enviada exitosamente!')
         
         con = Consulta.objects.create( 

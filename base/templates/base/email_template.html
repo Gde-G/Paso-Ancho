@@ -1,8 +1,46 @@
+{% load static %}
+<html>
 
-{{ name }}
+<head>
+    <style>
+        strong {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: large;
+
+        }
+        p{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+        .mail {
+            background-color: rgb(206, 252, 236);
+            color: black;
+            border: 2px;
+            border-color: brown;
+            border-style: groove;
+            border-radius: 2px;
+
+        }
+        .otro{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
 
 
-{{ email }}
+<body>
+    <div class="mail">
+        <div class="otro">
+            <h1>CONSULTA DESDE LA PAGINA:</h1>
+            <br>
+            <p><strong>Nombre</strong>: {{ name }}</p>
+            <p><strong>Email</strong>: {{ email }}</p>
+            <p><strong>Fecha</strong>: Desde {{date_from}} , Hasta {{date_to}}</p>
+            <p><strong>Cant. Personas</strong>: {{ amount_adults }} Adulto y {{ amount_kids }} Menores</p>
+            <p><strong>Pregunta</strong>: {{ question }}</p>
+        </div>
+    </div>
+</body>
 
-
-{{ question }}
+</html>
