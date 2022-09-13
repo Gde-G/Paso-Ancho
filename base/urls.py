@@ -6,7 +6,6 @@ urlpatterns = [
 
     path("cabañas/", views.cabañas, name='cabañas'),
     path("cabañas/8personas", views.cabañas, name='cabañas8'),
-    path("cabañas/2personas", views.cabañas, name='cabañas2'),
 
     path("alrededores/", views.alrededores, name='alrededores'),
 

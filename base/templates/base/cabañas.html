@@ -6,24 +6,7 @@
 
 {% block content%}
 {% load static %}
-<!--Tabs 2 cabañas -->
-<div id="list-cabañas" class="list-group mt-5">
-    <div class="row justify-content-center mt-5 mx-3">
-        <div class="col-sm-3 text-center rounded-3 mb-2">
-            <a class="list-group-item list-group-item-action text-dark shadow-lg" href="#8personas" style="background-color:rgb(136, 255, 136);">
-                Cabaña 1
-            </a>
-        </div>
-        <div class="col-sm-3 text-center rounded-3">
-            <a class="list-group-item list-group-item-action text-dark shadow-lg" href="#2personas" 
-                style="background-color:rgb(136, 255, 136);
-                        border: none;
-                        text-decoration:none;">
-                Cabaña 2
-            </a>
-        </div>
-    </div>
-</div>
+
 <!--Tabs 2 Contenido-->
 <div data-bs-spy="scroll" data-bs-target="#list-cabañas" data-bs-offset="0" class="scrollspy-example text-center text-white" tabindex="0">
     <!--CABAÑA 1-->
@@ -118,97 +101,6 @@
             
     </div>
 
-    <!--CABAÑA 2-->
-    <hr id="2personas">
-    <hr>
-        
-    <div class="mt-5">
-        <h2 class="mb-5 main-subtitle">Cabaña 2</h2>
-        <!--Carousel 2-->
-        <div id="carouselCabaña2" class="carousel slide container justify-content-center w-lg-75 " data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                        
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-1.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-2.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-3.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-4.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-5.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-6.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                    </div>    
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-7.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-8.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña2per/Cab2-9.jpg' %}" class="d-block w-100 h-100">
-                        </div>
-                    </div> 
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabaña2" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCabaña2" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!--Contenido 2-->
-        <div class="container justify-content-center my-3">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto blanditiis dolores ut, quisquam rerum
-                similique cum natus?Cupiditate, repudiandae amet! Recusandae ullam nemo nobis laborum fugit deserunt
-                itaque obcaecati delectus.
-            </p>
-            <div class="contianer justify-content-center ">
-                <h3 class="text-start ms-5">Caracteristicas:</h3>
-                <div class="container w-50">
-                    <div class="row">
-                        <div class="col">
-                            <ul>
-                                <li class="text-start">Capacidad: 2 personas</li>
-                                <li class="text-start">Dormitorio matrimonial: 1</li>
-                                <li class="text-start">Baño: 1</li>
-                                <li class="text-start">Cocina</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li class="text-start">Comedor</li>
-                                <li class="text-start">Living con Hogar</li>
-                                <li class="text-start">Garaje</li>
-                                <li class="text-start">Balcon</li>
-                            </ul>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </div>
     <hr>
     <hr>
 </div>

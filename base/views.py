@@ -13,7 +13,7 @@ activi = ['actividades#senderismo',
           'actividades#algo',
           'actividades#diacampo']
 
-caba = ['cabañas#8personas', 'cabañas#2personas']
+caba = ['cabañas#8personas']
 
 
 # Create your views here.
@@ -22,7 +22,6 @@ def home(request:HttpRequest):
 
     contexto = {
         'cabaña8': caba[0],
-        'cabaña2': caba[1],
         'actividades0': activi[0], 
         'actividades1': activi[1],
         'actividades2': activi[2],
@@ -35,7 +34,6 @@ def cabañas(request: HttpRequest):
     
     contexto = {
         'cabaña8': caba[0],
-        'cabaña2': caba[1],
         'actividades0': activi[0], 
         'actividades1': activi[1],
         'actividades2': activi[2],
@@ -48,7 +46,6 @@ def alrededores(request: HttpRequest):
 
     contexto = {
         'cabaña8': caba[0],
-        'cabaña2': caba[1],
         'actividades0': activi[0], 
         'actividades1': activi[1],
         'actividades2': activi[2],
@@ -62,7 +59,6 @@ def actividades(request: HttpRequest):
     
     contexto = {
         'cabaña8': caba[0],
-        'cabaña2': caba[1],
         'actividades0': activi[0], 
         'actividades1': activi[1],
         'actividades2': activi[2],
@@ -76,7 +72,6 @@ def contactanos(request: HttpRequest):
     
     contexto = {
         'cabaña8': caba[0],
-        'cabaña2': caba[1],
         'actividades0': activi[0], 
         'actividades1': activi[1],
         'actividades2': activi[2],
