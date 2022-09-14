@@ -68,6 +68,17 @@ def actividades(request: HttpRequest):
     return render(request, 'base/actividades.html', contexto)
 
 
+def galeria(request: HttpRequest):
+    contexto = {
+        'cabaña8': caba[0],
+        'actividades0': activi[0], 
+        'actividades1': activi[1],
+        'actividades2': activi[2],
+        'actividades3': activi[3]
+    }
+    return render(request, 'base/galeria.html', context=contexto)
+
+
 def contactanos(request: HttpRequest):
     
     
