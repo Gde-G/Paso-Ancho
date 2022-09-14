@@ -1,81 +1,82 @@
 {% extends 'main.html' %}
 
 {% block title %}
-    Inicio
+Inicio
 {% endblock title%}
 
 {% block content%}
 {% load static%}
+<style>
+    .caru-img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+</style>
 <!--Carrousel IMG-->
-<div class="row w-100 mx-0 g-0">
-    <div class="col">
-        <div id="carousel" class="carousel carousel-white slide carousel-fade bg-image mt-5" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                        
-                    <img src="{% static 'images/index/caru1.jpg' %}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3 class="white-carousel-title"></h3>
-                        
-                    </div>
-                </div>
-                <div class="carousel-item " data-bs-interval="2000">
-                    <img src="{% static 'images/index/caru2.jpg' %}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3 class="white-carousel-title"></h3>
-                        
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="{% static 'images/index/caru3.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block w-auto">
-                        <h3 class="green-carousel-title"></h3>
-                        
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="{% static 'images/index/caru4.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block w-auto">
-                        <h3 class="green-carousel-title"></h3>
-                        
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="{% static 'images/index/caru5.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block w-auto">
-                        <h3 class="brawn-carousel-title"></h3>
-                        
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="{% static 'images/index/caru6.jpg' %}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block w-auto">
-                        <h3 class="brawn-carousel-title"></h3>
-                        
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon text-white bg-dark rounded-circle" aria-hidden="true"></span>
-                <span class="visually-hidden text-white">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon text-white bg-dark rounded-circle" aria-hidden="true"></span>
-                <span class="visually-hidden text-white">Next</span>
-            </button>
-        </div>
+
+<div id="carousel" class="carousel carousel-white slide carousel-fade bg-image mt-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
     </div>
-        
+    <div class="w-100">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="{% static 'images/home/caru2.jpg' %}" class="d-block w-100 caru-img">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru4.jpg' %}" class="d-block w-100 caru-img">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru1.jpg' %}" class="d-block w-100 caru-img" alt="...">
+
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru3.jpg' %}" class="d-block w-100 caru-img" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru5.jpg' %}" class="d-block w-100 caru-img" alt="...">
+
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru6.jpg' %}" class="d-block w-100 caru-img" alt="...">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru8.jpg' %}" class="d-block w-100 caru-img">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru10.jpg' %}" class="d-block w-100 caru-img">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru11.jpg' %}" class="d-block w-100 caru-img">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="{% static 'images/home/caru13.jpg' %}" class="d-block w-100 caru-img">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon text-white bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden text-white">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon text-white bg-dark rounded-circle" aria-hidden="true"></span>
+            <span class="visually-hidden text-white">Next</span>
+        </button>
+    </div>
 </div>
-    
+
 <!--Algun contenidito de texto-->
 <div class="container mt-1 mb-5">
     <div class="row justify-content-center mb-3">
@@ -85,51 +86,51 @@
         <div class="col-1"></div>
         <div class="col-10">
             <p class="text-center text-white">
-                Lejos del turismo convencional, a 110Km de Córdoba capital apelamos a la 
-                convivencia con la naturaleza para sacarnos el stress de la ciudad, en este 
+                Lejos del turismo convencional, a 110Km de Córdoba capital apelamos a la
+                convivencia con la naturaleza para sacarnos el stress de la ciudad, en este
                 rinconcito donde se respira otro aire y se ven millones de estrellas por la
                 noche el único ruido que se escucha es el del arroyo que pasa entre medio de
                 las dos casas y desemboca en el río. <br> La tranquilidad y belleza del campo
                 solo es posible por su ubicación, uno de los lugares más lindos de Córdoba.
                 Lo que lo hace tan único también lo hace distinto a otros lugares más clásicos.
                 <br>
-                El campo está en una zona de pinares entre medio de dos pueblos chiquitos, 
+                El campo está en una zona de pinares entre medio de dos pueblos chiquitos,
                 cerca si vas en auto, pero lo suficientemente lejos como para sentir que nos
                 desconectamos de la rutina.
             </p>
         </div>
         <div class="col-1"></div>
-    </div>      
+    </div>
 </div>
 
 <!--Un videito de algo -->
 <div class="container my-2 mb-3">
-    <div class="row justify-content-center">    
+    <div class="row justify-content-center">
         <video width="50%" height="150%" class="d-flex w-75" controls>
-            <source src="{% static 'images/Vid1-Drone.mp4' %}" type="video/mp4">
-        </video>   
-    </div>      
+            <source src="{% static 'images/videos/Vid1-Drone.mp4' %}" type="video/mp4">
+        </video>
+    </div>
 </div>
-    
+
 <!--Card para la cabañas-->
 <div class="container text-white text-center my-5 mb-3">
     <h1 class="main-subtitle">Cabaña</h1>
     <p>
-    
+
 
     </p>
     <div class="row justify-content-center ">
         <div class="col-lg-7 g-4">
             <div class="card text-dark text-center border border-3" style="background-color:  rgb(216, 250, 216);">
                 <div class="card-header">
-                    <img src="{% static 'images/index/card-cab8per.jpg' %}" class="card-img-top" alt="" >
+                    <img src="{% static 'images/home/card-cabaña.jpg' %}" class="card-img-top" alt="">
                     <h3 class="card-title mt-2">Para 8 personas</h3>
                 </div>
                 <div class="card-body mt-1">
                     <p>
                         Cabaña con un estilo rustico ideal para la familia. Cuenta con una amplia
-                        galeria la que permite contemplar el paisaje. Ubicada en una colina 
-                        enfrente de un hermoso parque con salida al rio. 
+                        galeria la que permite contemplar el paisaje. Ubicada en una colina
+                        enfrente de un hermoso parque con salida al rio.
                     </p>
                 </div>
                 <div class="card-footer">
