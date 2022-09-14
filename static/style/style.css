@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Flood";
-  src: url("{% url static '/fonts/Flood.ttf' %}");
+  src: url("../fonts/Flood.ttf");
 }
 body {
   background: rgb(0, 3, 19);

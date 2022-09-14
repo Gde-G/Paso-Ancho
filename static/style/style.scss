@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'Flood';
-    src: url("{% url static '/fonts/Flood.ttf' %}");
+    src: url('../fonts/Flood.ttf');
 }
-
 body{
     background: rgb(0,3,19);
     background: linear-gradient(90deg, rgba(0,3,19,1) 0%, rgb(0, 26, 6) 100%);
