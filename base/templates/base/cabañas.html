@@ -1,260 +1,256 @@
 {% extends 'main.html' %}
 
 {% block title%}
-    Cabañas
+Cabañas
 {% endblock title%}
 
 {% block content%}
 {% load static %}
 
-<!--Tabs 2 Contenido-->
-<div data-bs-spy="scroll" data-bs-target="#list-cabañas" data-bs-offset="0" class="scrollspy-example text-center text-white" tabindex="0">
-    <!--CABAÑA 1-->
-    <hr id="8personas">
-    <hr>
-    <div class="mt-5">
-        <h2 class="mb-5 main-subtitle">Cabaña para 8 personas</h2>
-        <!--Carousel 1-->
-        <div id="carouselCabaña1" class="carousel slide container justify-content-center w-lg-75 " data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab1-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab1-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab1-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
+
+<hr id="8personas">
+<hr>
+<section id="cabaña" class="mt-5 justify-content-center text-white">
+    <h2 class="mb-5 main-subtitle text-center">Cabaña para 8 personas</h2>
+    <!--Carousel 1-->
+    <div id="carouselCabaña1" class="carousel slide container justify-content-center w-lg-75 " data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab1-1.jpg' %}" class="d-block w-100 h-100" alt="Cabaña sierras de Cordoba">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab1-2.jpg' %}" class="d-block w-100 h-100" alt="Cabaña sierras de Cordoba">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab1-3.jpg' %}" class="d-block w-100 h-100" alt="Cabaña sierras de Cordoba">
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab2-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab2-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab2-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                    </div>    
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab3-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab3-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab3-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab4-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab4-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab4-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab5-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab5-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab5-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab6-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab6-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab6-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                    </div> 
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <div class="row g-1 g-lg-3">
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab7-1.jpg' %}" class="d-block w-100 h-100" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab7-2.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                        <div class="col-4">
-                            <img src="{% static 'images/cabaña/cab7-3.jpg' %}" class="d-block w-100 h-100" alt="...">
-                        </div>
-                    </div> 
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab2-1.jpg' %}" class="d-block w-100 h-100" alt="Cabaña villa alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab2-2.jpg' %}" class="d-block w-100 h-100" alt="Cabaña villa alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab2-3.jpg' %}" class="d-block w-100 h-100" alt="Cabaña villa alpina">
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabaña1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCabaña1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!--Contenido 1-->
-        <div class="container justify-content-center my-3">
-            <p>
-                La cabaña es acogedora, con un estilo rústico que se mimetiza con todo el entorno.
-                Cuenta con una amplia galería que nos permite disfrutar de vistas indescriptibles.
-                Rodeada por una acequia, la cual forma cascada que cae en un estanque y el mismo
-                desemboca en el río, de agua cristalina con gran diversidad de peces e ideal para
-                disfrutar en familia. 
-            </p>
-            <div class="contianer justify-content-center ">
-                <h3 class="ms-1 ms-lg-5 main-subtitle">Cualidades:</h3>
-                <div class="container w-md-50 my-3 ms-md-5">
-                    <div class="row ">
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Capacidad hasta 8 personas</li>
-                                <li><small class="text-muted"></small></li>
-                            </ul>   
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Electricidad y Gas Natural</li>
-                                <li><small class="text-muted"></small></li>
-                            </ul>    
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Calefaccion y Termotanque</li>
-                                <li><small class="text-muted"></small></li>
-                            </ul>    
-                        </div>
-                    </div> 
-                    <div class="row">
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">1 Dormitorio Matrimonial</li>
-                                <li><small class="text-muted">Cuenta placar y hermosas vistas</small></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">3 Dormitorio Compartidos</li>
-                                <li><small class="text-muted">Cada uno, cama cucheta y placar</small></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Juegos de Ropa Blanca</li>
-                                <li><small class="text-muted">Sabanas y Toallas</small></li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="row">
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Baño</li>
-                                <li><small class="text-muted"> Y ante baño con 2 lavamanos</small></li>
-                            </ul>    
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Cocina</li>
-                                <li><small class="text-muted">Totalmente equipada</small></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Living Comedor</li>
-                                <li><small class="text-muted">con hogar</small></li>
-                            </ul>    
-                        </div>
-                    </div> 
-                    <div class="row">
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Freezer y Heladera</li>
-                                <li><small class="text-muted"></small></li>
-                            </ul>    
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Wifi</li>
-                                <li><small class="text-muted"></small></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Juegos de Mesa</li>
-                                <li><small class="text-muted"></small></li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="row">
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Casero</li>
-                                <li><small class="text-muted">Disponible las 24hs</small></li>
-                            </ul>    
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Playas privadas</li>
-                                <li><small class="text-muted">sobre el rio Los ReartesCaballos</small></li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul class="list-inline text-start">
-                                <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
-                                <li class="list-inline-item">Se aceptan Mascotas</li>
-                                <li><small class="text-muted">Pet friendly</small></li>
-                            </ul>
-                        </div>
-                    </div> 
-                         
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab3-1.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Paso Ancho">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab3-2.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Paso Ancho">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab3-3.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Paso Ancho">
+                    </div>
                 </div>
             </div>
-                
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab4-1.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Villa alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab4-2.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Villa alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab4-3.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Villa alpina">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab5-1.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Sierras de Cordoba">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab5-2.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Sierras de Cordoba">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab5-3.jpg' %}" class="d-block w-100 h-100" alt="Cabaña Sierras de Cordoba">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab6-1.jpg' %}" class="d-block w-100 h-100" alt="Cabañas Villa Alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab6-2.jpg' %}" class="d-block w-100 h-100" alt="Cabañas Villa Alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab6-3.jpg' %}" class="d-block w-100 h-100" alt="Cabañas Villa Alpina">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div class="row g-1 g-lg-3">
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab7-1.jpg' %}" class="d-block w-100 h-100" alt="Sierras Villa alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab7-2.jpg' %}" class="d-block w-100 h-100" alt="Sierras Villa alpina">
+                    </div>
+                    <div class="col-4">
+                        <img src="{% static 'images/cabaña/cab7-3.jpg' %}" class="d-block w-100 h-100" alt="Sierras Villa alpina">
+                    </div>
+                </div>
+            </div>
         </div>
-            
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabaña1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCabaña1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+    <!--Contenido 1-->
+    <article class="container justify-content-center my-3 text-center">
+        <p>
+            La cabaña es acogedora, con un estilo rústico que se mimetiza con todo el entorno.
+            Cuenta con una amplia galería que nos permite disfrutar de vistas indescriptibles.
+            Rodeada por una acequia, la cual forma cascada que cae en un estanque y el mismo
+            desemboca en el río, de agua cristalina con gran diversidad de peces e ideal para
+            disfrutar en familia.
+        </p>
+        <div class="contianer justify-content-center ">
+            <h3 class="ms-1 ms-lg-5 main-subtitle text-center">Cualidades:</h3>
+            <div class="container w-md-50 my-3 ms-md-5">
+                <div class="row ">
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Capacidad hasta 8 personas</li>
+                            <li><small class="text-muted"></small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Electricidad y Gas Natural</li>
+                            <li><small class="text-muted"></small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Calefaccion y Termotanque</li>
+                            <li><small class="text-muted"></small></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">1 Dormitorio Matrimonial</li>
+                            <li><small class="text-muted">Cuenta placar y hermosas vistas</small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">3 Dormitorio Compartidos</li>
+                            <li><small class="text-muted">Cada uno, cama cucheta y placar</small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Juegos de Ropa Blanca</li>
+                            <li><small class="text-muted">Sabanas y Toallas</small></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Baño</li>
+                            <li><small class="text-muted"> Y ante baño con 2 lavamanos</small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Cocina</li>
+                            <li><small class="text-muted">Totalmente equipada</small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Living Comedor</li>
+                            <li><small class="text-muted">con hogar</small></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Freezer y Heladera</li>
+                            <li><small class="text-muted"></small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Wifi</li>
+                            <li><small class="text-muted"></small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Juegos de Mesa</li>
+                            <li><small class="text-muted"></small></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Casero</li>
+                            <li><small class="text-muted">Disponible las 24hs</small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Playas privadas</li>
+                            <li><small class="text-muted">sobre el rio Los ReartesCaballos</small></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-inline text-start">
+                            <li class="list-inline-item"><i class="bi bi-patch-check text-success h4"></i></li>
+                            <li class="list-inline-item">Se aceptan Mascotas</li>
+                            <li><small class="text-muted">Pet friendly</small></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 
-    <hr>
-    <hr>
-</div>
+</section>
+
+<hr>
+<hr>
+
 {% include 'base/contacto_form.html' %}
 {% endblock content%}
