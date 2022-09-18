@@ -8,7 +8,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'pasoancho.herokuapp.com'
+    'pasoancho.herokuapp.com',
+    'pasoanchova.com'
 ]
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
