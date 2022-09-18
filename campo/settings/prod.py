@@ -40,7 +40,7 @@ LOGGIN = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = ['https://www.*pasoanchova.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.pasoanchova.com']
 
 #Heroku Settings
 django_on_heroku.settings(locals())
