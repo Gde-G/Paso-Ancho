@@ -44,4 +44,3 @@ CSRF_TRUSTED_ORIGINS = ['https://*.pasoanchova.com']
 
 #Heroku Settings
 django_on_heroku.settings(locals())
-del DATABASES['default']['OPTIONS']['sslmode']

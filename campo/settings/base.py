@@ -34,7 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
-    'django_extensions'
+    'django_extensions',
+    'captcha'
 ]
 
 MIDDLEWARE = [
@@ -80,14 +81,14 @@ MESSAGE_TAGS = {
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-load_dotenv(find_dotenv())
-DATABASES = {
-    'default': dj_database_url.config(
-        default= f"postgresql://{env.str('DB_USER')}:{env.str('DB_PASSWORD')}@{env.str('DB_HOST')}:{env.str('DB_PORT')}/{env.str('DB_NAME')}",
-        conn_max_age=600,
-        ssl_require=False
-        )
-}
+# load_dotenv(find_dotenv())
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default= f"postgresql://{env.str('DB_USER')}:{env.str('DB_PASSWORD')}@{env.str('DB_HOST')}:{env.str('DB_PORT')}/{env.str('DB_NAME')}",
+#         conn_max_age=600,
+#         ssl_require=False
+#         )
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -129,8 +130,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
-
-
+RECAPTCHA_PUBLIC_KEY = "6LcVwWkiAAAAANQfvKpJV7HjQgiW6fh8qP5TsQoV"
+RECAPTCHA_PRIVATE_KEY = env.str('RECAPTCHA_PRIVATE_KEY')
+RECAPTCHA_REQUIRED_SCORE = env.str('RECAPTCHA_REQUIRED_SCORE')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
