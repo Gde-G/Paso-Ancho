@@ -8,7 +8,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
-    'pasoancho.herokuapp.com',
+    'web-production-5ee9.up.railway.app/',
     'pasoanchova.com'
 ]
 
