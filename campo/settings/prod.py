@@ -8,7 +8,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
-    'web-production-5ee9.up.railway.app/',
+    'web-production-5ee9.up.railway.app',
     'pasoanchova.com'
 ]
 
