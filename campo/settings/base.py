@@ -81,14 +81,12 @@ MESSAGE_TAGS = {
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-# load_dotenv(find_dotenv())
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         default= f"postgresql://{env.str('DB_USER')}:{env.str('DB_PASSWORD')}@{env.str('DB_HOST')}:{env.str('DB_PORT')}/{env.str('DB_NAME')}",
-#         conn_max_age=600,
-#         ssl_require=False
-#         )
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': ':memory:',
+    }
+}}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
