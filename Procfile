@@ -1,1 +1,1 @@
-web: python3 manage.py runserver && gunicorn campo.wsgi
+web: python3 manage.py runserver
