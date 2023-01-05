@@ -103,3 +103,9 @@ def consulta(request: HttpRequest):
                     continue
                 messages.error(request, f"ERROR in {field}... {errors}" )
             return redirect(request.META['HTTP_REFERER'])
+
+def error_500(request):
+    return render(request, 'base/error_500.html')
+
+def check(request):
+    pass

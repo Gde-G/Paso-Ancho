@@ -19,6 +19,7 @@ urlpatterns = [
 
     path("contactanos/", views.contactanos, name='contactanos'),
 
-    path("consulta/", views.consulta, name='consulta')
+    path("consulta/", views.consulta, name='consulta'),
 
+    path("check/", views.check , name='checkerror'),
 ]
