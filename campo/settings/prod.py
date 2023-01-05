@@ -7,7 +7,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = [
+ALLOWED_HOSTS = ['0.0.0.0:'+env.str('PORT'),
     'web-production-5ee9.up.railway.app',
     'pasoanchova.com'
 ]
