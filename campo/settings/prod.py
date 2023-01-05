@@ -5,7 +5,7 @@ from .base import *
 
 SECRET_KEY = config('SECRET_KEY')
 
-DEBUG = config('DEBUG')
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'web-production-5ee9.up.railway.app',
