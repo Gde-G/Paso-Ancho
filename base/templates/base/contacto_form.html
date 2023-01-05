@@ -9,51 +9,52 @@
     </div>
     <form action="{% url 'consulta' %}" method="post" class="border border-white rounded-3">
         {% csrf_token %}
-        <div class="my-3 mx-lg-5 mx-2">
-            <label for="name" class="form-label">Nombre</label>
-            <input type="text" name="name" class="form-control shadow w-100" placeholder="Ingrese su nombre..." required>
+        <div class="my-1 mx-lg-5 mx-2 text-center">
+            <label for="id_name" class="form-label">Nombre</label>
+            <input type="text" name="name" class="form-control shadow w-100" placeholder="Ingrese su nombre..." required id="id_name">
         </div>
-        <div class="mb-3 mx-lg-5 mx-2">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" name="email" class="form-control shadow w-100" placeholder="Ingrese su email..." required>
+        <div class="mb-1 mx-lg-5 mx-2 text-center">
+            <label for="id_email" class="form-label">Email</label>
+            <input type="email" name="email" class="form-control shadow w-100" placeholder="Ingrese su email..." required id="id_email">
         </div>
         <div class="row justify-content-center text-center">
-            <h3>Fechas:</h3>
+            <h4>Fecha:</h4>
             <div class="col-5">
-                <div class="mb-3 mx-lg-5 mx-2">
-                    <label for="date_from" class="form-label">Desde</label>
-                    <input type="date" name="date_from" class="form-control shadow w-100" placeholder="" required>
+                <div class="mb-1 mx-lg-5 mx-2">
+                    <label for="id_date_from" class="form-label">Desde</label>
+                    <input type="date" name="date_from" class="form-control shadow w-100" placeholder="" required id="id_date_from">
                 </div>
             </div>
             <div class="col-5">
-                <div class="mb-3 mx-lg-5 mx-2">
-                    <label for="date_to" class="form-label">Hasta</label>
-                    <input type="date" name="date_to" class="form-control shadow w-100" placeholder="" required>
+                <div class="mb-1 mx-lg-5 mx-2">
+                    <label for="id_date_to" class="form-label">Hasta</label>
+                    <input type="date" name="date_to" class="form-control shadow w-100" placeholder="" required id="id_date_to">
                 </div>
             </div>
         </div>
         <div class="row justify-content-center text-center">
-            <h3 >Cantidad de personas:</h2>
+            <h4 >Cantidad de personas:</h4>
             <div class="col-5 ">
-                <div class="mb-3 mx-lg-5 mx-2">
+                <div class="mb-1 mx-lg-5 mx-2">
                     <label for="amount_adults" class="form-label">Adultos</label>
-                    <input type="number" name="amount_adults" class="form-control shadow w-100" placeholder="Cantidad de Adultos" required>
+                    <input type="number" name="amount_adults" class="form-control shadow w-100" placeholder="Cantidad de Adultos" required id="id_amount_adults">
                 </div>
             </div>
             <div class="col-5">
-                <div class="mb-3 mx-lg-5 mx-2">
+                <div class="mb-1 mx-lg-5 mx-2">
                     <label for="amount_kids" class="form-label">Menores</label>
-                    <input type="number" name="amount_kids" class="form-control shadow w-100" placeholder="Cantidad de Menores" required>
+                    <input type="number" name="amount_kids" class="form-control shadow w-100" placeholder="Cantidad de Menores" required id="id_amount_kids">
                 </div>
             </div>
         </div>
-        <div class="mb-2 mx-lg-5 mx-2">
-            <label for="question" class="form-label">Pregunta</label>
-            <textarea name="question" rows="3" class="form-control shadow w-100" placeholder="Ingrese su pregunta..." required></textarea>
+        <div class="mb-1 mx-lg-5 mx-2 text-center">
+            <label for="id_question" class="form-label">Pregunta</label>
+            <textarea name="question" rows="3" class="form-control shadow w-100" placeholder="Ingrese su pregunta..." required id="id_question"></textarea>
         </div>
-        <div class="row mb-0">
-            <div class="col ms-lg-5">
-                <p>
+        
+        <div class="row my-3">
+            <div class="col-lg-4 ms-lg-2 mt-3">
+                <p class="text-center">
                     Tambien podes escribirnos a Whats App!
                     <a href="https://wa.me/543517698648" class="link-success">
                         <i class="bi bi-whatsapp mt-0">
@@ -61,9 +62,11 @@
                         </i>
                     </a>
                 </p> 
-                
             </div>
-            <div class="col">
+            <div class="col-lg-3 ms-lg-0 text-center">
+                {{form.captcha}}
+            </div>
+            <div class="col-lg-4 mt-3 text-center">
                 <div class="d-flex justify-content-end mb-4">
                 <input type="submit" class="btn btn-outline-light w-auto mx-2 mx-lg-5" value="Confirmar">
                 </div>
@@ -72,4 +75,26 @@
         </div>
     </form>
 </div>
+<script>
+    $(function(){
+        function rescaleCaptcha(){
+          var width = $('.g-recaptcha').parent().width();
+          var scale;
+          if (width < 302) {
+            scale = width / 302;
+          } else{
+            scale = 1.0; 
+          }
+      
+          $('.g-recaptcha').css('transform', 'scale(' + scale + ')');
+          $('.g-recaptcha').css('-webkit-transform', 'scale(' + scale + ')');
+          $('.g-recaptcha').css('transform-origin', '0 0');
+          $('.g-recaptcha').css('-webkit-transform-origin', '0 0');
+        }
+      
+        rescaleCaptcha();
+        $( window ).resize(function() { rescaleCaptcha(); });
+      
+      });
+</script>
 <br>
