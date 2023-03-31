@@ -9,10 +9,7 @@ body {
 }
 
 .logo {
-  font-family: "Flood", sans-serif;
-  line-height: 0;
-  font-size: 2rem;
-  color: rgba(0, 0, 0, 0.596);
+  display: none;
 }
 
 .main-title {
@@ -169,6 +166,15 @@ h1, .h1 {
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 358px) {
+  .logo{
+    display:inline; 
+    font-family: "Flood", sans-serif;
+    line-height: 0;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.596);
   }
 }
 
