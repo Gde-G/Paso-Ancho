@@ -9,10 +9,14 @@ body {
 }
 
 .logo {
-    font-family: 'Flood', sans-serif;
-    line-height: 0;
-    font-size: 2rem;
-    color: rgba(0, 0, 0, 0.596);
+    display:none;
+    @media (min-width:358px){
+        display: inline;
+        font-family: 'Flood', sans-serif;
+        line-height: 0;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.596);
+    }
 }
 
 
