@@ -10,6 +10,14 @@ body {
 
 .logo {
     display: none;
+
+    @media (min-width:641px) {
+        display: inline;
+        font-family: 'Flood', sans-serif;
+        line-height: 0;
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.596);
+    }
 }
 
 
