@@ -17,10 +17,8 @@
     <meta name="keywords" content="paso ancho,cabaña,sierras,villa alpina,campo,turismo,cordoba,trekking">
 
     <link rel="shortcut icon" href="{% static 'images/Logo1.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'bootstrap/scss/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'style/style.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -34,7 +32,8 @@
 </head>
 
 <body>
-    <div id="page">
+    {% include 'loading.html'%}
+    <div id="page" style="display:none;">
         <header>
             {% include 'navbar.html' %}
         </header>

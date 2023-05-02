@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 from email.policy import default
-import environ 
+import environ
 import dj_database_url
 from dotenv import find_dotenv, load_dotenv
 
@@ -20,7 +20,7 @@ from django.contrib.messages import constants as messages
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-#Environ Setting 
+# Environ Setting
 env = environ.Env()
 environ.Env.read_env()
 
@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
     'django_extensions',
-    'captcha'
+    'captcha',
+
 ]
 
 MIDDLEWARE = [
@@ -68,13 +69,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'campo.wsgi.application'
 
-#Messages
+# Messages
 MESSAGE_TAGS = {
-        messages.DEBUG: 'alert-secondary',
-        messages.INFO: 'alert-info',
-        messages.SUCCESS: 'alert-success',
-        messages.WARNING: 'alert-warning',
-        messages.ERROR: 'alert-danger',
+    messages.DEBUG: 'alert-secondary',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
 }
 
 
@@ -125,7 +126,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / STATIC_URL
 ]
 
 RECAPTCHA_PUBLIC_KEY = "6Lf60tQjAAAAAKilpGw7szZbrcwIla8Fkt6jEfT1"
@@ -136,10 +137,13 @@ RECAPTCHA_REQUIRED_SCORE = env.str('RECAPTCHA_REQUIRED_SCORE')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Email Settigns
+# Email Settigns
 EMAIL_BACKEND = env.str('EMAIL_BACKEND')
 EMAIL_HOST = env.str('EMAIL_HOST')
 EMAIL_PORT = env.str('EMAIL_PORT')
 EMAIL_HOST_USER = env.str('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env.str('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS')
+
+# ip stack
+API_IPSTACK_KEY = env.str('API_IPSTACK_KEY')

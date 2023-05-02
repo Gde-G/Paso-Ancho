@@ -93,6 +93,85 @@ body {
   transform: translateY(0);
 }
 
+.container.loading {
+  background: rgb(0, 3, 19);
+  background: linear-gradient(90deg, rgb(0, 3, 19) 0%, rgb(0, 26, 6) 100%);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.loading-content {
+  width: 160px;
+  height: 160px;
+  padding: 6rem;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  border: transparent;
+  box-shadow: 0px 0px 35px 17px rgb(147, 250, 144);
+  -webkit-box-shadow: 0px 0px 35px 17px rgb(147, 250, 144);
+  -moz-box-shadow: 0px 0px 35px 17px rgb(147, 250, 144);
+}
+
+.loading-img {
+  position: absolute !important;
+  left: 50% !important;
+  top: 30% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 130px;
+  height: auto;
+}
+
+.loading-text {
+  color: #3d3d3d;
+  font-size: 0.7rem;
+  position: absolute !important;
+  left: 40% !important;
+  top: 110% !important;
+}
+
+.progress-bar-container {
+  position: absolute !important;
+  left: 50% !important;
+  top: 100% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 150%;
+  height: 2rem;
+  border-radius: 20px;
+  background-color: #d4ffb0;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 53, 9, 0.9607843137) !important;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+@media (min-width: 576px) {
+  .loading-content {
+    width: 320px;
+    height: 320px;
+  }
+  .loading-img {
+    width: 220px;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .loading-content {
+    width: 420px;
+    height: 420px;
+  }
+  .loading-img {
+    width: 320px;
+    height: auto;
+    top: 40% !important;
+  }
+  .progress-bar-container {
+    width: 100%;
+  }
+}
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -5615,8 +5694,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
