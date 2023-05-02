@@ -172,6 +172,97 @@ body {
     width: 100%;
   }
 }
+#e-404 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 138, 119);
+  background: linear-gradient(90deg, rgb(0, 100, 87) 0%, rgb(38, 0, 126) 100%);
+  color: white !important;
+  margin-top: -0.2rem;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center center;
+}
+@media (min-width: 568px) {
+  #e-404 {
+    margin-top: -0.5rem;
+    padding-top: 0.8rem;
+  }
+}
+#e-404 a.back {
+  width: auto;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.1rem;
+}
+#e-404 a.back:hover {
+  font-size: 1.3rem;
+  background-color: aliceblue;
+  color: black !important;
+}
+#e-404 .logo-img {
+  width: 5rem !important;
+  height: auto;
+  align-items: center;
+  display: inline-block;
+}
+#e-404 .logo-title {
+  margin: auto 0;
+  width: auto;
+}
+#e-404 .gif {
+  margin: 1rem 0;
+  width: 15rem !important;
+  height: auto;
+  align-items: center;
+}
+#e-404 .gif img {
+  width: 100%;
+  height: auto;
+}
+
+#e-500 {
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 138, 119);
+  background: linear-gradient(90deg, rgb(0, 100, 87) 0%, rgb(38, 0, 126) 100%);
+  color: white !important;
+  margin-top: -0.2rem;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center center;
+}
+@media (min-width: 568px) {
+  #e-500 {
+    margin-top: -0.5rem;
+    padding-top: 0.8rem;
+  }
+}
+#e-500 .gif {
+  margin-top: 1rem;
+  width: 20rem !important;
+  height: auto;
+  align-items: center;
+}
+#e-500 .gif img {
+  width: 100%;
+  height: auto;
+}
+#e-500 .logo-img {
+  width: 5rem !important;
+  height: auto;
+  align-items: center;
+  display: inline-block;
+}
+#e-500 .logo-title {
+  margin: auto 0;
+  width: auto;
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

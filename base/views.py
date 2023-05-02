@@ -90,7 +90,8 @@ def consulta(request: HttpRequest):
                 corr.attach_alternative(content, 'text/html')
                 corr.send(fail_silently=False)
 
-                messages.success(request, 'La consulta fue enviada exitosamente!')
+                messages.success(
+                    request, 'La consulta fue enviada exitosamente!')
             except:
                 messages.error(
                     request, 'La consulta NO fue enviada debido a un error. Recuerde completar todos los campos y el Captcha!')
@@ -101,11 +102,13 @@ def consulta(request: HttpRequest):
                 if field == "captcha" and errors[0] == 'This field is required.':
                     messages.error(request, "You must pass the reCAPTCHA test")
                     continue
-                messages.error(request, f"ERROR in {field}... {errors}" )
+                messages.error(request, f"ERROR in {field}... {errors}")
             return redirect(request.META['HTTP_REFERER'])
 
-def error_500(request):
-    return render(request, 'base/error_500.html')
 
-def check(request):
-    pass
+def handler500(request):
+    return render(request, 'base/500.html', status=500)
+
+
+def handler404(request, exception):
+    return render(request, 'base/404.html', status=404)

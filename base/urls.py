@@ -21,5 +21,6 @@ urlpatterns = [
 
     path("consulta/", views.consulta, name='consulta'),
 
-    path("check/", views.check , name='checkerror'),
+    path("500/", views.handler500, name='handler500'),
+    path("404/", views.handler404, name='handler404'),
 ]
