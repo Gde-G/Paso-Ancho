@@ -14,7 +14,7 @@ class ConsultaForm(ModelForm):
     date_to = DateField(required=True, input_formats=['%Y-%m-%d'])
     amount_adults = IntegerField(required=True)
     amount_kids = IntegerField(required=True)
-    captcha = fields.ReCaptchaField(widget=widgets.ReCaptchaV2Checkbox())
+    captcha = fields.ReCaptchaField(widget=widgets.ReCaptchaV3())
     
     class Meta:
         model = Consulta

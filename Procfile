@@ -1,1 +1,1 @@
-web: gunicorn campo.wsgi
+web: gunicorn campo.wsgi --log-file -

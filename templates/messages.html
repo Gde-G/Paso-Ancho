@@ -1,14 +1,13 @@
-
+{% load i18n %}
 {% for message in messages %}
-<div class="container pt-3">
+<div class="container pt-3 mt-5 position-absolute" style="top: 0%; left: 0; z-index: 10;">
     <div class="alert {{ message.tags }} alert-dismissible shadow fade show mt-5" role="alert" >
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         <h4 class="alert-heading">
-            Su consulta fue enviada con exito!
+            {{ message|safe }} 
         </h4>
-        {{ message | safe }}
         <hr>
-        <small class="text-muted">Recuerde revisar la casilla de correos no deseado / spam.</small>
+        <small class="text-muted">Recibira la respuesta al correo electronico enviado en el formulario.</small>
     </div>
 </div>
 {% endfor %}

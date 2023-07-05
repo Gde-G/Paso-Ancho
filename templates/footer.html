@@ -10,7 +10,7 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="bi bi-tree text-success me-2"></i>Paso Ancho 
+                        <i class="bi bi-tree text-success me-2"></i><span translate="no"> Paso Ancho </span> 
                     </h6>
                     <p>
                         Este lugar único pertenece a mi familia desde hace años, cuando mi abuelo
@@ -23,24 +23,24 @@
                 <!-- Grid column -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        Products
+                    <h6 class="text-uppercase fw-bold mb-4 text-capitalize">
+                        Secciones
                     </h6>
                     <p>
-                        <a href="{% url 'home' %}{{cabaña8}}" class="text-reset">Cabaña 8 Personas</a>
+                        <a href="{% url 'home' %}{{cabaña8}}" class="text-reset text-capitalize">Cabaña 8 Personas</a>
                     </p>
                     <p>
-                        <a href="{% url 'home' %}{{actividades0}}" class="text-reset">Senderismo</a>
+                        <a href="{% url 'home' %}{{actividades0}}" class="text-reset text-capitalize">Senderismo</a>
                     </p>
                     <p>
-                        <a href="{% url 'home' %}{{actividades1}}" class="text-reset">Trekking</a>
+                        <a href="{% url 'home' %}{{actividades1}}" class="text-reset text-capitalize">Trekking</a>
                     </p>
                 </div>
           <!-- Grid column -->
               
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <h6 class="text-uppercase fw-bold mb-4 text-capitalize">Contacto</h6>
                         <a href="https://www.google.com/maps/place/Parador+Paso+Ancho/@-31.9752743,-64.7726931,16.17z/data=!4m13!1m7!3m6!1s0x95d2cc0a27ea2d1f:0x9dd9554d7478f62a!2sVilla+Alpina,+C%C3%B3rdoba!3b1!8m2!3d-31.9563507!4d-64.8132356!3m4!1s0x95d2c9b90102275b:0x537f14a23ab10ecd!8m2!3d-31.9716179!4d-64.770682"
                             class="text-muted text-decoration-none" >
                             <i class="bi bi-geo me-3 text-info"></i>
@@ -51,9 +51,12 @@
                         pasoanchocasasdecampo@gmail.com
                     </p>
                     <p>
-                        <i class="bi bi-phone me-1 text-info"></i>
-                        <i class="bi bi-whatsapp me-2 text-success"></i>
-                        +54 351 769 8648
+                        <a href="https://wa.me/543517698648" class="link-success text-decoration-none">
+                            <i class="bi bi-phone me-1 text-info"></i>
+                            <i class="bi bi-whatsapp me-2 text-success"></i>
+                                <small class="">+54 351 769 8648</small>
+                            </i>
+                        </a>
                     </p>
                     <a href="https://www.instagram.com/pasoancho.va/" class="text-decoration-none text-muted">
                         <i class="bi bi-instagram text-info me-3"></i>
