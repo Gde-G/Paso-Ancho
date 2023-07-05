@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # Environ Setting
 env = environ.Env()
 environ.Env.read_env()
-DEBUG = env.str('DEBUG')
+DEBUG = env.bool('DEBUG')
 # Application definition
 
 INSTALLED_APPS = [
@@ -139,7 +139,7 @@ RECAPTCHA_PRIVATE_KEY = env.str('RECAPTCHA_PRIVATE_KEY')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email Settigns
-if DEBUG :
+if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 else:
     EMAIL_BACKEND = env.str('EMAIL_BACKEND')
