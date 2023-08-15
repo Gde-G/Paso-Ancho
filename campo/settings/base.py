@@ -36,8 +36,6 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'django_extensions',
     'captcha',
-    'whitenoise.runserver_nostatic'
-
 ]
 
 MIDDLEWARE = [
@@ -48,7 +46,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'campo.urls'
