@@ -20,7 +20,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('', include('base.urls'))
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
 
 handler500 = 'base.views.handler500'
 handler404 = 'base.views.handler404'
